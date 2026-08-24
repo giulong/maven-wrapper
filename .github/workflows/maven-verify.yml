@@ -36,4 +36,4 @@ jobs:
           {"os": "ubuntu-latest"}
         ]
       failure-upload-path: |
-        **/target/it/mavenversion_range/build.log
+        **/target/it/mavenversion_range/*
