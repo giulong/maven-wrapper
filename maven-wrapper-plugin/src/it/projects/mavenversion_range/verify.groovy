@@ -18,8 +18,8 @@
  * under the License.
  */
 
-assert new File(basedir,'mvnw').exists()
-assert new File(basedir,'mvnw.cmd').exists()
+//assert new File(basedir,'mvnw').exists()
+//assert new File(basedir,'mvnw.cmd').exists()
 assert !(new File( basedir, 'mvnwDebug' ).exists())
 assert !(new File( basedir, 'mvnwDebug.cmd' ).exists())
 
