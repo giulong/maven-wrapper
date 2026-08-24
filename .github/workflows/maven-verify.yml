@@ -28,7 +28,7 @@ jobs:
     uses: apache/maven-gh-actions-shared/.github/workflows/maven-verify.yml@v4
     with:
       verify-fail-fast: false
-      verify-goal: 'verify -X'
+      verify-goal: '-Prun-its verify -X'
       maven4-build: true
       matrix-exclude: >
         [ 
