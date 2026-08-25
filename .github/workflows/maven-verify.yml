@@ -28,13 +28,14 @@ jobs:
     uses: apache/maven-gh-actions-shared/.github/workflows/maven-verify.yml@v4
     with:
       verify-fail-fast: false
+      ff-run: false
       verify-goal: '-Prun-its verify -X'
       maven4-build: true
       matrix-exclude: >
         [ 
           {"jdk": "8"},
-          {"os": "macos-latest"},
-          {"os": "ubuntu-latest"}
+          {"os": "ubuntu-latest"},
+          {"os": "macos-latest"}
         ]
       failure-upload-path: |
         **/target/it/mavenversion_range/*

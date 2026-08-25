@@ -18,8 +18,6 @@
  * under the License.
  */
 
-println "CIAO ${basedir.listFiles()}"
-
 assert new File(basedir,'mvnw').exists()
 assert new File(basedir,'mvnw.cmd').exists()
 assert !(new File( basedir, 'mvnwDebug' ).exists())
